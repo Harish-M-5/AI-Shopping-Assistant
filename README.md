@@ -1,7 +1,7 @@
 # 🛒 AI Shopping Assistant
 
 A full-stack demo that recognises products through your camera, checks the packaging for damage, reads
-Manufacturing / Expiry dates from the label, and uses generative AI to explain what you are buying.
+Manufacturing ,Expiry dates from the label, and uses generative AI to explain what you are buying.
 
 
 ---
