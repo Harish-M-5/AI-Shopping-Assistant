@@ -55,21 +55,20 @@ It can especially help elderly people, people with weak eyesight, and anyone buy
 | Backend | FastAPI (Python) |
 | Object detection | YOLOv8 (Ultralytics) |
 | Image processing | OpenCV |
-| OCR | EasyOCR (Tesseract optional) |
-| Generative AI | Groq API (also supports Gemini, OpenAI, Claude, Ollama, and OpenAI-compatible servers) |
-| Database | None |
+| OCR | EasyOCR |
+| Generative AI | Groq API |
 
 ---
 
 | Layer | Technology |
 |---|---|
-| Frontend | React 18 + Vite + React Router (plain CSS, responsive, dark-mode aware) |
+| Frontend | React 18 + Vite + React Router (plain CSS, responsive |
 | Backend | FastAPI (Python) |
 | Object detection | YOLOv8 (`ultralytics`) |
 | Image processing / damage check | OpenCV |
-| OCR | EasyOCR (default) or Tesseract |
-| Generative AI | **Any provider**: Gemini, ChatGPT, Claude, Groq, OpenRouter, DeepSeek, Mistral, Ollama (local) or custom – plain HTTPS |
-| Storage | None – no database, no IoT, no sensors |
+| OCR | EasyOCR  |
+| Generative AI |  Groq |
+
 
 ---
 
@@ -136,9 +135,9 @@ npm install
 npm run dev                        # → http://localhost:5173
 ```
 
-Open **http://localhost:5173**, go to **Live Detection**, click **Start camera** and allow permission.
+ **http://localhost:5173**,
 
-> The camera API only works on `http://localhost` or HTTPS. Use `localhost`, not your LAN IP.
+> The camera API only works on `http://localhost` 
 
 
 --- 
@@ -192,40 +191,9 @@ smart-shopping-assistant/
 └── sample_data/                # test images and video
 ```
 
----
-
-
-## ▶️ How to Run the Full Project
-
-Open **two terminals**.
-
-**Terminal 1: Backend**
-```powershell
-cd backend
-.venv\Scripts\Activate.ps1
-python -m uvicorn app.main:app --reload --port 8000
-```
-Check `http://127.0.0.1:8000/api/health`. You should see your provider, your model, and `"llm_configured": true`.
-
-**Terminal 2: Frontend**
-```bash
-cd frontend
-npm run dev
-```
-Open **http://localhost:5173**.
-
-**Using the app**
-1. Go to **Live Detection** and click **Start camera** (allow permission), or **Upload image**.
-2. Pick the detected product, or type a product name in the manual box.
-3. Click **Analyze product**.
-4. Read the result panel.
-
-Test files are in `sample_data/` (good label, expired label, damaged box, and a video).
-
-> The first request is slow because the models load once. After that it is fast.
-> Important: after changing `.env`, always restart the backend.
 
 ---
+
 
 ## 🔌 How the Frontend Calls the Backend APIs
 
