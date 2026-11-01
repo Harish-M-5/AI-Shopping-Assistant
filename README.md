@@ -15,6 +15,26 @@ Manufacturing / Expiry dates from the label, and uses generative AI to explain w
 
 ---
 
+# Output:
+<img width="1920" height="1080" alt="Screenshot 2026-11-01 192804" src="https://github.com/user-attachments/assets/0e377063-5636-48f2-bda4-5c0c60c69c22" />
+
+<img width="1920" height="1080" alt="Screenshot 2026-11-01 192813" src="https://github.com/user-attachments/assets/bc3b0cba-2a62-4b0d-ac25-1b40d0dc0ceb" />
+
+<img width="1920" height="1080" alt="Screenshot 2026-11-01 192858" src="https://github.com/user-attachments/assets/7329e41e-8ad4-4527-b0f7-922ef33296c5" />
+
+
+
+<img width="1920" height="1080" alt="Screenshot 2026-11-01 193000" src="https://github.com/user-attachments/assets/a69426a0-8ae2-4d3d-b2ce-ed5f5ea9fe97" />
+
+
+
+<img width="1920" height="1080" alt="Screenshot 2026-11-01 193012" src="https://github.com/user-attachments/assets/16c97510-eb62-4f84-a234-718a552fc843" />
+
+
+
+
+---
+
 ## ✨ Features
 
 1. **Live camera detection** – frames are sent to YOLOv8 ~1.5×/second.
